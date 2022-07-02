@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,13 +6,14 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
    
+   
 }
 
 
 nav{
     min-height: 5vh;
     min-width: 100vw;
-    /* background-image: linear-gradient(180deg, #ffb2f5, #ffffffcf); */
+    
     
 }
 nav,h1{
@@ -20,9 +22,11 @@ nav,h1{
 }
 .supermain{
     display: flex;
+    
 }
 .main{
-    border: 1px solid black;
+    background-color: #d9e6ff;
+  
     flex: 2 1 0;
 }
 .cardscontainer{
@@ -32,17 +36,23 @@ nav,h1{
     
 }
 .cards{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
     padding: 1rem;
-    width: 6rem;
-    height: 7rem;
-    border: 1px solid black;
-    margin: 2rem;
+    width: 7.5rem !important;
+    height: 8.5rem;
+    margin: 1.4rem;
     border-radius: 1rem;
-    
+    background-image: linear-gradient(180deg, #6A9BFF, #d9d9d9cf);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgb(0 30 255 / 39%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 
 }
 .sidecard{
-    border: solid black 1px;
+   
     min-width: 100%;
     min-height: 100vh;
     display: flex;
@@ -66,7 +76,7 @@ nav,h1{
 .tcards{
     height: 40rem;
     width: 30rem;
-    border: solid  black 2px;
+   
     margin-right: 2rem;
     margin-left: 2rem;
     display: flex;
@@ -122,4 +132,8 @@ input{
     border: .5px solid #0000004a;
     padding: 2rem;
     font-size: 120%;
+}
+
+.cards,img{
+    width: 75px;
 }
